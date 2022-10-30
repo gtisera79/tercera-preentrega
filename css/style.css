@@ -1,0 +1,291 @@
+/*
+@mixin props-flex ($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin medidas ($width,$height,$padding,$margin){
+    width:$width ;
+    height: $height;
+    padding: $padding ;
+    margin: $margin;
+
+}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*formulario de contacto*/
+fieldset {
+  background-color: rgba(238, 230, 230, 0.459); }
+
+.form-group {
+  margin: 10px; }
+
+.formularioContacto {
+  justify-content: center;
+  align-items: center;
+  padding: 2px 2px; }
+
+/*formulario de contacto*/
+.header {
+  color: #5ea0cb;
+  font-size: 27px;
+  padding: 30px; }
+
+.bigicon {
+  font-size: 35px;
+  color: #5ea0cb; }
+
+footer {
+  display: grid;
+  background-color: black;
+  padding: 10px;
+  grid-template-columns: 75% 25%;
+  width: auto;
+  height: auto; }
+
+.telefonoCorreoDireccion {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-right: 50px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 15px; }
+  .telefonoCorreoDireccion a {
+    text-decoration: none;
+    list-style: none;
+    color: white; }
+
+.redesSociales, .iconosRedes {
+  color: white;
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  margin-right: 10px;
+  font-size: 15px; }
+
+.iconosRedes {
+  /*extend*/
+  text-decoration: none;
+  list-style: none; }
+
+/*aside*/
+.dolarCotizacion {
+  background-color: rgba(65, 73, 65, 0.5); }
+
+.dolarLink {
+  text-align: center; }
+  .dolarLink:hover {
+    transform: scale(0.7); }
+  .dolarLink a {
+    text-decoration: none;
+    color: black; }
+    .dolarLink a:hover {
+      color: red; }
+
+.dolarIcono {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .dolarIcono :hover {
+    transform: scale(0.7); }
+
+/*.clase-index{
+    @extend .cards-style;
+    @include medidas (100%,500px,none,2px)
+}*/
+/*posicionar las card*/
+.superficieMainQ {
+  width: auto;
+  height: 100vh;
+  background-color: white;
+  margin: 50px 10px 10px 10px; }
+
+.superficieMain {
+  width: auto;
+  height: auto;
+  background-color: rgba(128, 128, 128, 0.123); }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5ea0cb;
+  /*mixins*/ }
+
+.contenedor .box {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 5px;
+  text-align: center;
+  transition: all 0.25s;
+  justify-content: center;
+  justify-items: center; }
+  .contenedor .box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+  .contenedor .box img {
+    width: 220px;
+    height: 220px; }
+  .contenedor .box h2 {
+    font-weight: 600; }
+  .contenedor .box p {
+    padding: 0 1rem;
+    font-size: 10px;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 8px;
+    padding: 2px;
+    margin: 10px; }
+
+.box {
+  justify-content: center;
+  align-items: center; }
+
+.box-1 {
+  background-color: none;
+  grid-area: box-1; }
+
+.box-2 {
+  background-color: none;
+  grid-area: box-2; }
+
+.box-3 {
+  background-color: none;
+  grid-area: box-3; }
+
+.box-4 {
+  background-color: none;
+  grid-area: box-4; }
+
+.box-5 {
+  background-color: none;
+  grid-area: box-5; }
+
+.box-6 {
+  background-color: none;
+  grid-area: box-6; }
+
+.preguntas {
+  -webkit-animation: preguntas 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: preguntas 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes preguntas {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+@keyframes preguntas {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+/*animacion quienes*/
+.quienes {
+  -webkit-animation: quienes 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: quienes 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+@-webkit-keyframes quienes {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes quienes {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+.contenedor {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row: repeat(6, 1fr);
+  grid-template-areas: "box-1" "box-2" "box-3" "box-4" "box-5" "box-6";
+  justify-content: center;
+  justify-items: center;
+  /*
+      width: 100%;
+      max-width: 100vh;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;    
+      */ }
+
+@media (min-width: 576px) {
+  .contenedor {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row: repeat(6, 1fr);
+    grid-template-areas: "box-1" "box-2" "box-3" "box-4" "box-5" "box-6";
+    justify-content: center;
+    justify-items: center; }
+  .quienes p {
+    font-size: 25px;
+    margin: 5px; }
+  .preguntas p {
+    font-size: 25px;
+    margin: 5px; }
+  .contenedor .box p {
+    font-size: 15px; }
+  .contenedor .box {
+    width: 330px;
+    height: 430px; } }
+
+@media (min-width: 992px) {
+  .contenedor {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "box-1 box-2 box-3" "box-4 box-5 box-6"; }
+  .quienes p {
+    font-size: 35px;
+    margin: 10px; }
+  .preguntas p {
+    font-size: 35px;
+    margin: 10px; }
+  .contenedor .box p {
+    font-size: 15px; } }

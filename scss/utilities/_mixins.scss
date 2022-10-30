@@ -1,0 +1,21 @@
+/*
+@mixin props-flex ($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin medidas ($width,$height,$padding,$margin){
+    width:$width ;
+    height: $height;
+    padding: $padding ;
+    margin: $margin;
+
+}*/
+
+@mixin prueba ($display,$justufy,$align,$color){
+    display: $display;
+    justify-content: $justufy;
+    align-items: $align;
+    color: $color;
+}

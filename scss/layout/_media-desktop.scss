@@ -1,0 +1,27 @@
+
+@media (min-width: 992px){
+    .contenedor{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "box-1 box-2 box-3"
+        "box-4 box-5 box-6"
+        ;
+    }
+      .quienes p{
+      font-size: 35px;
+      margin: 10px;
+      }
+    .preguntas p{
+      font-size: 35px;
+      margin: 10px;
+    }
+    .contenedor .box p{
+      font-size: 15px;
+    }
+
+  }
+  

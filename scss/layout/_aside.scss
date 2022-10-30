@@ -1,0 +1,32 @@
+/*aside*/
+.dolarCotizacion{
+    background-color: rgba(65, 73, 65, 0.5);    
+}
+.dolarLink{
+    text-align: center; 
+    &:hover{
+        transform: scale(0.7);
+    } 
+        a{  
+            
+            text-decoration: none;        
+            color: black;
+            &:hover{
+                color: red;
+                                
+            }
+
+        }
+    }
+
+.dolarIcono{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    :hover{
+        transform: scale(0.7);
+    }
+        
+}
