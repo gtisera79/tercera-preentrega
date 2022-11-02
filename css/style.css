@@ -19,7 +19,7 @@
 
 /*formulario de contacto*/
 fieldset {
-  background-color: rgba(238, 230, 230, 0.459); }
+  background-color: white; }
 
 .form-group {
   margin: 10px; }
@@ -31,7 +31,7 @@ fieldset {
 
 /*formulario de contacto*/
 .header {
-  color: #5ea0cb;
+  color: black;
   font-size: 27px;
   padding: 30px; }
 
@@ -109,13 +109,13 @@ footer {
 .superficieMain {
   width: auto;
   height: auto;
-  background-color: rgba(128, 128, 128, 0.123); }
+  background-color: white; }
 
 h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #5ea0cb;
+  color: black;
   /*mixins*/ }
 
 .contenedor .box {
@@ -130,21 +130,21 @@ h1 {
   justify-content: center;
   justify-items: center; }
   .contenedor .box:hover {
-    transform: translateY(-15px);
+    transform: translateY(-8px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
   .contenedor .box img {
     width: 220px;
-    height: 220px; }
+    height: 228px; }
   .contenedor .box h2 {
     font-weight: 600; }
   .contenedor .box p {
     padding: 0 1rem;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     background-color: rgba(255, 255, 255, 0.233);
     border-radius: 8px;
     padding: 2px;
-    margin: 10px; }
+    margin: 12px; }
 
 .box {
   justify-content: center;
@@ -286,6 +286,6 @@ h1 {
     margin: 10px; }
   .preguntas p {
     font-size: 35px;
-    margin: 10px; }
+    margin: 12px; }
   .contenedor .box p {
     font-size: 15px; } }
