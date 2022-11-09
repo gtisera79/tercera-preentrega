@@ -1,0 +1,30 @@
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  
+    .product-removal {
+      float: right;
+    }
+    
+    .product-line-price {
+      float: right;
+      clear: left;
+      width: auto;
+      margin-top: 10px;
+    }
+    
+    .product .product-line-price:before {
+      content: 'Item Total: $';
+    }
+    
+    .totals {
+      .totals-item {
+        label {
+          width: 60%;
+        }
+        
+        .totals-value {
+          width: 40%;
+        }
+      }
+    }
+  }
