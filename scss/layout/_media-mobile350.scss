@@ -4,12 +4,9 @@
     .product-removal {
       float: right;
     }
-    
-    .product-line-price {
-      float: right;
-      clear: left;
-      width: auto;
-      margin-top: 10px;
+    .tarjetas {
+      position: absolute;
+      top: 100%;
     }
     
     .product .product-line-price:before {
