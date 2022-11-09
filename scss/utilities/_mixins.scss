@@ -13,9 +13,10 @@
 
 }*/
 
-@mixin prueba ($display,$justufy,$align,$color){
+@mixin prueba ($display,$justufy,$align,$color,$margin){
     display: $display;
     justify-content: $justufy;
     align-items: $align;
     color: $color;
+    margin: $margin;
 }

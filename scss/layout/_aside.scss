@@ -6,6 +6,7 @@
     text-align: center; 
     &:hover{
         transform: scale(0.7);
+        transition-duration: 900ms;
     } 
         a{  
             
@@ -27,6 +28,7 @@
     
     :hover{
         transform: scale(0.7);
+        transition-duration: 900ms;
     }
         
 }
