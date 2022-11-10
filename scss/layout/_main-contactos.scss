@@ -1,23 +1,19 @@
-
-
 /*formulario de contacto*/
-fieldset{
+fieldset {
   background-color: white;
 }
 
-.form-group{
+.form-group {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   margin: 5px;
-    
 }
-.formularioContacto{
+.formularioContacto {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2px 2px;
-  
 }
 /*formulario de contacto*/
 .header {
@@ -29,5 +25,4 @@ fieldset{
 .bigicon {
   font-size: 35px;
   color: rgb(94, 160, 203);
-
 }

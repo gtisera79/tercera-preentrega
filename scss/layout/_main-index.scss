@@ -3,129 +3,155 @@
     @include medidas (100%,500px,none,2px)
 }*/
 /*posicionar las card*/
-.superficieMainQ{
-    width: auto;
-    height: 1400px;
-    background-color: $background-Quienes;
-    margin: (100px 10px 10px 10px)
+.superficieMainQ {
+  width: auto;
+  height: 1200px;
+  background-color: $background-Quienes;
+  margin: (100px 10px 10px 10px);
 }
-.superficieMain{
-    width: auto;
-    height: auto;
-    background-color:$background-Main;
+.superficieMain {
+  width: auto;
+  height: auto;
+  background-color: $background-Main;
+}
+.superficieMainQq {
+  width: auto;
+  height: 100vh;
+  background-color: $background-Quienes;
+  margin: (100px 10px 20px 10px);
 }
 
-h1{
-    @include prueba (flex,center,center,$color-texto-primario,25px); /*mixins*/
+h1 {
+  @include prueba(flex, center, center, $color-texto-primario, 25px); /*mixins*/
 }
 
 .contenedor .box {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 25px;
+  text-align: center;
+  transition: all 0.25s;
+  justify-content: center;
+  justify-items: center;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
     width: 220px;
-    height: auto;
+    height: 228px;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+
+  p {
+    padding: 0 1rem;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.233);
     border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 25px;
-    text-align: center;
-    transition: all 0.25s;
-    justify-content: center;
-    justify-items: center;
-
-    &:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    img {
-        width: 220px;
-        height: 228px;
-    }
-
-    h2 {
-        font-weight: 600;
-    }
-
-    p {
-        padding: 0 1rem;
-        font-size: 12px;
-        font-weight: 300;
-        background-color: rgba(255, 255, 255, 0.233);
-        border-radius: 8px;
-        padding: 2px;
-        margin: 12px;
-    }
+    padding: 2px;
+    margin: 12px;
+  }
 }
 
-.box{    
-    justify-content: center;
-    align-items: center;
+.box {
+  justify-content: center;
+  align-items: center;
 }
-.box-1{
-    background-color: none;
-    grid-area: box-1;
+.box-1 {
+  background-color: none;
+  grid-area: box-1;
 }
-.box-2{
-    background-color: none;
-    grid-area: box-2;
+.box-2 {
+  background-color: none;
+  grid-area: box-2;
 }
-.box-3{
-    background-color: none;
-    grid-area: box-3;
+.box-3 {
+  background-color: none;
+  grid-area: box-3;
 }
-.box-4{
-    background-color: none;
-    grid-area: box-4;
+.box-4 {
+  background-color: none;
+  grid-area: box-4;
 }
-.box-5{
-    background-color: none;
-    grid-area: box-5;
+.box-5 {
+  background-color: none;
+  grid-area: box-5;
 }
-.box-6{
-    background-color: none;
-    grid-area: box-6;
+.box-6 {
+  background-color: none;
+  grid-area: box-6;
 }
 
 /**compras desde aca*/
 $color-border: #eee;
 $color-label: #aaa;
-$font-default: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-bold: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
-
+$font-default: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+  Helvetica, Arial, sans-serif;
+$font-bold: "HelveticaNeue-Medium", "Helvetica Neue Medium";
 
 /* Global "table" column settings */
-.product-image { float: left; width: 20%; }
-.product-details { float: left; width: 37%; }
-.product-price { float: left; width: 12%; }
-.product-quantity { float: left; width: 10%; }
-.product-removal { float: left; width: 9%; }
-.product-line-price { float: left; width: 12%; text-align: right; }
-
+.product-image {
+  float: left;
+  width: 20%;
+}
+.product-details {
+  float: left;
+  width: 37%;
+}
+.product-price {
+  float: left;
+  width: 12%;
+}
+.product-quantity {
+  float: left;
+  width: 10%;
+}
+.product-removal {
+  float: left;
+  width: 9%;
+}
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
 
 /* This is used as the traditional .clearfix class */
 .group:before,
 .group:after {
-    content: '';
-    display: table;
-} 
+  content: "";
+  display: table;
+}
 .group:after {
-    clear: both;
+  clear: both;
 }
 .group {
-    zoom: 1;
+  zoom: 1;
 }
 
-
 /* Apply clearfix in a few places */
-.shopping-cart, .column-labels, .product, .totals-item {
+.shopping-cart,
+.column-labels,
+.product,
+.totals-item {
   @extend .group;
 }
 
-
 /* Apply dollar signs */
-.product .product-price:before, .product .product-line-price:before, .totals-value:before {
-  content: '$';
+.product .product-price:before,
+.product .product-line-price:before,
+.totals-value:before {
+  content: "$";
 }
-
 
 h1 {
   font-weight: 100;
@@ -140,7 +166,6 @@ label {
   padding: 10px;
 }
 
-
 /* Column headers */
 .column-labels {
   label {
@@ -148,26 +173,27 @@ label {
     margin-bottom: 15px;
     border-bottom: 1px solid $color-border;
   }
-  
-  .product-image, .product-details, .product-removal {
+
+  .product-image,
+  .product-details,
+  .product-removal {
     text-indent: -9999px;
   }
 }
-
 
 /* Product entries */
 .product {
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid $color-border;
-  
+
   .product-image {
     text-align: center;
     img {
       width: 100px;
     }
   }
-  
+
   .product-details {
     .product-title {
       margin-right: 20px;
@@ -178,14 +204,13 @@ label {
       line-height: 1.4em;
     }
   }
-  
+
   .product-quantity {
     input {
       width: 40px;
-      
     }
   }
-  
+
   .remove-product {
     border: 0;
     padding: 4px 8px;
@@ -195,12 +220,11 @@ label {
     font-size: 12px;
     border-radius: 3px;
   }
-  
+
   .remove-product:hover {
     background-color: #a44;
   }
 }
-
 
 /* Totals section */
 .totals {
@@ -209,21 +233,21 @@ label {
     clear: both;
     width: 100%;
     margin-bottom: 10px;
-    
+
     label {
       float: left;
       clear: both;
       width: 79%;
       text-align: right;
     }
-    
+
     .totals-value {
       float: right;
       width: 21%;
       text-align: right;
     }
   }
-  
+
   .totals-item-total {
     font-family: $font-bold;
   }
@@ -246,17 +270,16 @@ label {
 
 /* Make adjustments for tablet */
 @media screen and (max-width: 650px) {
-  
   .shopping-cart {
     margin: 0;
     padding-top: 20px;
     border-top: 1px solid $color-border;
   }
-  
+
   .column-labels {
     display: none;
   }
-  
+
   .product-image {
     float: right;
     width: auto;
@@ -264,38 +287,35 @@ label {
       margin: 0 0 5px 5px;
     }
   }
-  
+
   .product-details {
     float: none;
     margin-bottom: 10px;
     width: auto;
   }
-  
+
   .product-price {
     clear: both;
     width: 70px;
   }
-  
+
   .product-quantity {
     width: 100px;
     input {
       margin-left: 20px;
     }
   }
-  
+
   .product-quantity:before {
-    content: 'x';
+    content: "x";
   }
-  
+
   .product-removal {
     width: auto;
   }
-  
+
   .product-line-price {
     float: right;
     width: 70px;
   }
-  
 }
-
-

@@ -1,31 +1,31 @@
 /*animacion quienes*/
 
 .quienes {
-	-webkit-animation: quienes 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: quienes 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: quienes 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: quienes 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes quienes {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
   }
-  @keyframes quienes {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
   }
+}
+@keyframes quienes {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}

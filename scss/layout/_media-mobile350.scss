@@ -1,27 +1,10 @@
 /* Make more adjustments for phone */
 @media screen and (max-width: 350px) {
   
-    .product-removal {
-      float: right;
-    }
+    
     .tarjetas {
       position: absolute;
-      top: 100%;
+      top: 120%;
     }
     
-    .product .product-line-price:before {
-      content: 'Item Total: $';
-    }
-    
-    .totals {
-      .totals-item {
-        label {
-          width: 60%;
-        }
-        
-        .totals-value {
-          width: 40%;
-        }
-      }
-    }
   }

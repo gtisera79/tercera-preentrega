@@ -47,7 +47,7 @@ footer {
   display: grid;
   background-color: black;
   padding: 10px;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 60% 40%;
   width: auto;
   height: auto; }
 
@@ -110,7 +110,7 @@ footer {
 /*posicionar las card*/
 .superficieMainQ {
   width: auto;
-  height: 1400px;
+  height: 1200px;
   background-color: white;
   margin: 100px 10px 10px 10px; }
 
@@ -118,6 +118,12 @@ footer {
   width: auto;
   height: auto;
   background-color: white; }
+
+.superficieMainQq {
+  width: auto;
+  height: 100vh;
+  background-color: white;
+  margin: 100px 10px 20px 10px; }
 
 h1 {
   display: flex;
@@ -211,13 +217,16 @@ h1 {
   text-align: right; }
 
 /* This is used as the traditional .clearfix class */
-.group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
+.group:before, .shopping-cart:before,
+.column-labels:before,
+.product:before,
+.totals-item:before,
 .group:after,
 .shopping-cart:after,
 .column-labels:after,
 .product:after,
 .totals-item:after {
-  content: '';
+  content: "";
   display: table; }
 
 
@@ -228,13 +237,18 @@ h1 {
 .totals-item:after {
   clear: both; }
 
-.group, .shopping-cart, .column-labels, .product, .totals-item {
+.group, .shopping-cart,
+.column-labels,
+.product,
+.totals-item {
   zoom: 1; }
 
 /* Apply clearfix in a few places */
 /* Apply dollar signs */
-.product .product-price:before, .product .product-line-price:before, .totals-value:before {
-  content: '$'; }
+.product .product-price:before,
+.product .product-line-price:before,
+.totals-value:before {
+  content: "$"; }
 
 h1 {
   font-weight: 100; }
@@ -252,7 +266,9 @@ label {
   margin-bottom: 15px;
   border-bottom: 1px solid #eee; }
 
-.column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
+.column-labels .product-image,
+.column-labels .product-details,
+.column-labels .product-removal {
   text-indent: -9999px; }
 
 /* Product entries */
@@ -340,7 +356,7 @@ label {
     .product-quantity input {
       margin-left: 20px; }
   .product-quantity:before {
-    content: 'x'; }
+    content: "x"; }
   .product-removal {
     width: auto; }
   .product-line-price {
@@ -349,7 +365,7 @@ label {
 
 .tarjetas {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 50%;
   width: 190px;
   height: 210px;
@@ -373,7 +389,7 @@ label {
 
 .tarjetas__elemento {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 190px;
   height: 210px;
@@ -398,30 +414,38 @@ body {
   background: white; }
 
 @-webkit-keyframes carrusel {
-  0%, 17.5% {
+  0%,
+  17.5% {
     -webkit-transform: translateZ(-182px) rotateY(0);
     transform: translateZ(-182px) rotateY(0); }
-  27.5%, 45% {
+  27.5%,
+  45% {
     -webkit-transform: translateZ(-182px) rotateY(-120deg);
     transform: translateZ(-182px) rotateY(-120deg); }
-  55%, 72.5% {
+  55%,
+  72.5% {
     -webkit-transform: translateZ(-182px) rotateY(-240deg);
     transform: translateZ(-182px) rotateY(-240deg); }
-  82.5%, 100% {
+  82.5%,
+  100% {
     -webkit-transform: translateZ(-182px) rotateY(-360deg);
     transform: translateZ(-182px) rotateY(-360deg); } }
 
 @keyframes carrusel {
-  0%, 17.5% {
+  0%,
+  17.5% {
     -webkit-transform: translateZ(-182px) rotateY(0);
     transform: translateZ(-182px) rotateY(0); }
-  27.5%, 45% {
+  27.5%,
+  45% {
     -webkit-transform: translateZ(-182px) rotateY(-120deg);
     transform: translateZ(-182px) rotateY(-120deg); }
-  55%, 72.5% {
+  55%,
+  72.5% {
     -webkit-transform: translateZ(-182px) rotateY(-240deg);
     transform: translateZ(-182px) rotateY(-240deg); }
-  82.5%, 100% {
+  82.5%,
+  100% {
     -webkit-transform: translateZ(-182px) rotateY(-360deg);
     transform: translateZ(-182px) rotateY(-360deg); } }
 
@@ -486,17 +510,9 @@ body {
 
 /* Make more adjustments for phone */
 @media screen and (max-width: 350px) {
-  .product-removal {
-    float: right; }
   .tarjetas {
     position: absolute;
-    top: 100%; }
-  .product .product-line-price:before {
-    content: 'Item Total: $'; }
-  .totals .totals-item label {
-    width: 60%; }
-  .totals .totals-item .totals-value {
-    width: 40%; } }
+    top: 120%; } }
 
 .contenedor {
   display: grid;
@@ -515,6 +531,10 @@ body {
       flex-wrap: wrap;
       justify-content: center;    
       */ }
+  .contenedor .superficieMainQq {
+    width: auto;
+    background-color: white;
+    margin: 100px 10px 20px 10px; }
 
 @media (min-width: 576px) {
   .contenedor {
@@ -536,7 +556,12 @@ body {
     font-size: 15px; }
   .contenedor .box {
     width: 330px;
-    height: 430px; } }
+    height: 430px; }
+  .superficieMainQq {
+    width: auto;
+    height: 100vh;
+    background-color: white;
+    margin: 100px 10px 20px 10px; } }
 
 @media (min-width: 992px) {
   .contenedor {
